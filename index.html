@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Mémoire Visuelle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Jeu de Mémoire Visuelle</h1>
+            <p class="subtitle">Mémorisez et reproduisez la séquence !</p>
+        </header>
+
+        <div class="game-info">
+            <div class="stat">
+                <span class="label">Niveau</span>
+                <span class="value" id="level">1</span>
+            </div>
+            <div class="stat">
+                <span class="label">Score</span>
+                <span class="value" id="score">0</span>
+            </div>
+            <div class="stat">
+                <span class="label">Meilleur</span>
+                <span class="value" id="best">0</span>
+            </div>
+        </div>
+
+        <div id="message" class="message">Cliquez sur "Démarrer" pour commencer</div>
+
+        <div id="grid-container" class="grid-container">
+            <!-- La grille sera générée dynamiquement -->
+        </div>
+
+        <div class="controls">
+            <button id="start-btn" class="btn btn-primary">Démarrer</button>
+            <button id="restart-btn" class="btn btn-secondary" style="display: none;">Recommencer</button>
+        </div>
+
+        <div class="instructions">
+            <h3>Comment jouer ?</h3>
+            <ul>
+                <li>Une séquence de cases va s'allumer</li>
+                <li>Mémorisez l'ordre des cases qui s'allument</li>
+                <li>Reproduisez la séquence en cliquant sur les cases dans le bon ordre</li>
+                <li>Chaque niveau ajoute une nouvelle case à mémoriser</li>
+                <li>Le jeu se termine si vous faites une erreur</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
